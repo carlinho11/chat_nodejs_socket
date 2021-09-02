@@ -21,4 +21,4 @@ server.listen(process.env.PORT || 3000, () =>{
 
 //require('./src/Routes/indexSocket')(io);
 
-require('./src/Routes/index')(app);
+//require('./src/Routes/index')(app);
