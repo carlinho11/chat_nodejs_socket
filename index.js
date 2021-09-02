@@ -13,14 +13,12 @@ app.use(express.urlencoded({
 
 const server = require('http').createServer(app);
 
-const io = require('socket.io')(server);
-
-console.log(process.env.PORT)
+//const io = require('socket.io')(server);
 
 server.listen(process.env.PORT || 3000, () =>{
   console.log('Conectado');
 });
 
-require('./src/Routes/indexSocket')(io);
+//require('./src/Routes/indexSocket')(io);
 
 require('./src/Routes/index')(app);
