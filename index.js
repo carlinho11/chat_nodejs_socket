@@ -11,7 +11,7 @@ const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
 
-server.listen(3001, () =>{
+server.listen(process.env.PORT || 3000, () =>{
   console.log('Conectado');
 });
 
